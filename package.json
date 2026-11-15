@@ -1,0 +1,14 @@
+{
+  "name": "teachback-ai",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["app", "ui", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace @teachback/ui",
+    "dev:api": "npm run start:dev --workspace @teachback/app",
+    "build": "npm run build --workspace @teachback/contracts && npm run build --workspace @teachback/app && npm run build --workspace @teachback/ui",
+    "test": "npm run test --workspace @teachback/app && npm run test --workspace @teachback/ui",
+    "lint": "npm run lint --workspace @teachback/app && npm run lint --workspace @teachback/ui"
+  },
+  "engines": { "node": ">=20.11.0" }
+}
