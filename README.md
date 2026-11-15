@@ -24,3 +24,4 @@ npm test
 ```
 
 Copy each `.env.example` to `.env.local` or `.env` before enabling MongoDB and Cloudinary. The current foundation runs with mock frontend data and an in-memory backend note repository when external credentials are absent.
+# teach-back
